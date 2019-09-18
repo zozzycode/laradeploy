@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/sfycfswq/
+    - /bin/cp -r * $DEPLOYPATH/laradeploy/  #copy all from root
+#    - /bin/cp -r ./public/* $DEPLOYPATH/zozzycode.com/laradeploy/
+    - /bin/cp ./public/js/*.js $DEPLOYPATH/laradeploy.zozzycode.com/js/
+    - /bin/cp ./public/css/*.css $DEPLOYPATH/laradeploy.zozzycode.com/css/
